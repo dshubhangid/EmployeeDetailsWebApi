@@ -63,7 +63,7 @@ namespace EmployeeDetailsWebApi.Controllers
                 return BadRequest();
             }
             _employeeService.UpdateEmployee(id, employeeUpdateDto);
-            return NoContent();
+            return Ok();
         }
 
 
